@@ -1,0 +1,39 @@
+uuid: 850ec223-597b-4dfb-8fe0-20f24459257d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_components
+    - node.type.car_listing
+    - paragraphs.paragraphs_type.accordion_component
+    - paragraphs.paragraphs_type.image_and_text_component
+  module:
+    - entity_reference_revisions
+id: node.car_listing.field_main_components
+field_name: field_main_components
+entity_type: node
+bundle: car_listing
+label: 'Main components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_component: accordion_component
+      image_and_text_component: image_and_text_component
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_component:
+        weight: 4
+        enabled: true
+      accordion_item:
+        weight: 5
+        enabled: false
+      image_and_text_component:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions

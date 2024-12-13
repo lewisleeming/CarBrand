@@ -1,0 +1,14 @@
+uuid: 466b3796-c643-432c-a541-32ea1fafeb02
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cheeta_admin
+  module:
+    - user
+id: user_remove_role_action.cheeta_admin
+label: 'Remove the Cheeta admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cheeta_admin

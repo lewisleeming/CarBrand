@@ -1,0 +1,118 @@
+#ddev-generated
+
+http:
+  routers:
+    
+    
+    zoocha-installer-solr-8983-http:
+      
+      rule: HostRegexp(`zoocha-installer.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "zoocha-installer-solr-8983-http"
+      tls: false
+      entrypoints:
+        - http-8983
+    
+    
+    zoocha-installer-web-80-http:
+      
+      rule: HostRegexp(`zoocha-installer.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "zoocha-installer-web-80-http"
+      tls: false
+      entrypoints:
+        - http-80
+    
+    
+    zoocha-installer-web-8025-http:
+      
+      rule: HostRegexp(`zoocha-installer.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "zoocha-installer-web-8025-http"
+      tls: false
+      entrypoints:
+        - http-8025
+    
+    
+    
+    
+    
+    
+    
+    zoocha-installer-web-80-https:
+      
+      rule: HostRegexp(`zoocha-installer.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "zoocha-installer-web-80-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-443
+    
+    
+    zoocha-installer-web-8025-https:
+      
+      rule: HostRegexp(`zoocha-installer.ddev.site`)
+      
+      middlewares:
+        - autodetect
+      service: "zoocha-installer-web-8025-https"
+      
+      tls: true
+      
+      entrypoints:
+        - http-8026
+    
+    
+
+  # autodetect won't be needed in Traefik 3 https://github.com/traefik/traefik/pull/9546
+  middlewares:
+    autodetect:
+      contentType:
+        autoDetect: false
+
+  services:
+    
+    zoocha-installer-solr-8983-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-zoocha-installer-solr:8983
+    
+    zoocha-installer-web-80-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-zoocha-installer-web:80
+    
+    zoocha-installer-web-8025-http:
+      loadbalancer:
+        servers:
+          - url: http://ddev-zoocha-installer-web:8025
+    
+    zoocha-installer-web-80-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-zoocha-installer-web:80
+    
+    zoocha-installer-web-8025-https:
+    
+      loadbalancer:
+        servers:
+          - url: http://ddev-zoocha-installer-web:8025
+    
+
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/zoocha-installer.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/zoocha-installer.key
+
