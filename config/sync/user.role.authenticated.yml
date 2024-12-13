@@ -10,6 +10,7 @@ dependencies:
     - contact
     - file
     - filter
+    - media
     - search
     - shortcut
     - system
@@ -30,3 +31,4 @@ permissions:
   - 'skip comment approval'
   - 'use text format basic_html'
   - 'use text format webform_default'
+  - 'view media'
