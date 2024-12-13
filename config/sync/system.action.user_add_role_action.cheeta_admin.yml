@@ -1,0 +1,14 @@
+uuid: a6d56ead-86ff-46d2-97ba-a38b5ac448f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.cheeta_admin
+  module:
+    - user
+id: user_add_role_action.cheeta_admin
+label: 'Add the Cheeta admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: cheeta_admin

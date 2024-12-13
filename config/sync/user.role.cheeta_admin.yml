@@ -1,0 +1,12 @@
+uuid: d6fcf82b-b161-4df5-b5bc-7b528a422a34
+langcode: en
+status: true
+dependencies:
+  module:
+    - content_lock
+id: cheeta_admin
+label: 'Cheeta admin'
+weight: 4
+is_admin: null
+permissions:
+  - 'break content lock'

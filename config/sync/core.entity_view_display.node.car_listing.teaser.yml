@@ -1,0 +1,24 @@
+uuid: 5a63d123-fec6-4398-aaf8-397039c244ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.car_listing.field_hero_image
+    - field.field.node.car_listing.field_main_components
+    - node.type.car_listing
+  module:
+    - user
+id: node.car_listing.teaser
+targetEntityType: node
+bundle: car_listing
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_hero_image: true
+  field_main_components: true

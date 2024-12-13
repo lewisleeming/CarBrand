@@ -1,0 +1,57 @@
+uuid: 36e8449e-e05c-41d4-b013-fac29f3c9009
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.car_listing.field_hero_image
+    - field.field.node.car_listing.field_main_components
+    - node.type.car_listing
+  module:
+    - entity_reference_revisions
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_main_components:
+      children: {  }
+      label: 'Main components'
+      parent_name: ''
+      region: hidden
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+id: node.car_listing.default
+targetEntityType: node
+bundle: car_listing
+mode: default
+content:
+  field_hero_image:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_main_components:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
