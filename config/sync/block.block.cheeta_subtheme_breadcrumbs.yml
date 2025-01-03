@@ -1,0 +1,22 @@
+uuid: 71011ffc-0b54-4688-aa3f-76257862c356
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: Q3PAGTwrHokVZdLC_EfxgzA231LupTLdWA1GTzKzxIY
+id: cheeta_subtheme_breadcrumbs
+theme: cheeta_subtheme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

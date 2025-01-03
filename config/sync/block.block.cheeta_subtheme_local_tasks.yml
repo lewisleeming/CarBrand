@@ -1,0 +1,22 @@
+uuid: 932f3813-d2d0-40d0-9ebd-2d0763d686e6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: XzO-opUlfojvBDprJ8PtLJyf7I1MsiDSf3Qrg6aWkxA
+id: cheeta_subtheme_local_tasks
+theme: cheeta_subtheme
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

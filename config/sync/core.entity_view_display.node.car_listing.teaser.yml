@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.car_listing.field_car_type
     - field.field.node.car_listing.field_hero_image
     - field.field.node.car_listing.field_main_components
     - node.type.car_listing
@@ -20,5 +21,6 @@ content:
     weight: 100
     region: content
 hidden:
+  field_car_type: true
   field_hero_image: true
   field_main_components: true

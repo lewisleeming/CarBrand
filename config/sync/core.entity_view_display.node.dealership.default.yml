@@ -1,0 +1,58 @@
+uuid: d8792a89-b7d3-4d9d-a40e-718c5b68f3c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dealership.body
+    - field.field.node.dealership.field_image
+    - field.field.node.dealership.field_location
+    - field.field.node.dealership.field_main_components
+    - node.type.dealership
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.dealership.default
+targetEntityType: node
+bundle: dealership
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_main_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

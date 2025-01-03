@@ -1,0 +1,20 @@
+uuid: 7d6d2be4-bc0a-43be-abb1-8568a25e11da
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: XGNYe4nW7P650QflQNToUsGexRH7qzgJr3sPTrqEYJA
+id: cheeta_subtheme_local_actions
+theme: cheeta_subtheme
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

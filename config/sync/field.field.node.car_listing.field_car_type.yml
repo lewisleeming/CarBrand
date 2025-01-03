@@ -1,29 +1,29 @@
-uuid: 75ea06a4-4d45-4ad2-808a-af68d73047f8
+uuid: be36d4b9-2b61-4e28-b760-73141aefe0b6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_hero_image
-    - media.type.media
+    - field.storage.node.field_car_type
     - node.type.car_listing
-id: node.car_listing.field_hero_image
-field_name: field_hero_image
+    - taxonomy.vocabulary.car_type
+id: node.car_listing.field_car_type
+field_name: field_car_type
 entity_type: node
 bundle: car_listing
-label: 'Hero image'
+label: 'Car type'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:media'
+  handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      media: media
+      car_type: car_type
     sort:
-      field: _none
-      direction: ASC
+      field: name
+      direction: asc
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

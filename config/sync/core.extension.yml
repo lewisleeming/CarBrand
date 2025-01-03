@@ -15,8 +15,10 @@ module:
   clamav: 0
   comment: 0
   config: 0
+  config_ignore: 0
   contact: 0
   content_lock: 0
+  content_moderation: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -69,6 +71,7 @@ module:
   username_enumeration_prevention: 0
   views_ui: 0
   webform: 0
+  workflows: 0
   pathauto: 1
   xmlsitemap: 1
   password_policy: 10
@@ -79,4 +82,7 @@ theme:
   olivero: 0
   claro: 0
   gin: 0
+  stable9: 0
+  bootstrap5: 0
+  cheeta_subtheme: 0
 profile: minimal

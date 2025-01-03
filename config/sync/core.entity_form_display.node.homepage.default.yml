@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.homepage.field_hero_image
     - field.field.node.homepage.field_main_components
+    - field.field.node.homepage.field_slogan
     - node.type.homepage
   module:
     - field_group
@@ -31,6 +32,7 @@ third_party_settings:
         width_breakpoint: 640
     group_hero:
       children:
+        - field_slogan
         - field_hero_image
       label: Hero
       region: content
@@ -76,7 +78,7 @@ content:
     third_party_settings: {  }
   field_hero_image:
     type: media_library_widget
-    weight: 3
+    weight: 5
     region: content
     settings:
       media_types: {  }
@@ -98,6 +100,14 @@ content:
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
+    third_party_settings: {  }
+  field_slogan:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 2
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

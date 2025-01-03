@@ -1,4 +1,4 @@
-uuid: e21d3d29-2df9-4d18-8a49-2e6420583a6f
+uuid: 6e6ab9c1-795d-4644-a453-97b91d2682f3
 langcode: en
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Homepage
-type: homepage
+name: Dealership
+type: dealership
 description: null
 help: null
 new_revision: true
