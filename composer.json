@@ -19,6 +19,7 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.4",
         "drupal/better_exposed_filters": "^6.0",
+        "drupal/bootstrap5": "^4.0",
         "drupal/captcha": "^2.0",
         "drupal/clamav": "^2.0",
         "drupal/config_ignore": "^3.2",

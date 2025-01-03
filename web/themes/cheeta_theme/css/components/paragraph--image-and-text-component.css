@@ -1,0 +1,62 @@
+.text-image-paragraph {
+  display: flex;
+  align-items: center;          /* Vertically center the content */
+  justify-content: center;      /* Horizontally center the content */
+  gap: 1rem;
+  flex-wrap: wrap;              /* Allow wrapping on smaller screens */
+}
+
+.text-image-paragraph.text-left .image {
+  order: 1;                     /* Image on the left */
+  display: flex;                /* Use flex to center the image */
+  justify-content: center;      /* Horizontally center the image */
+}
+
+.text-image-paragraph.text-left .text {
+  order: 2;                     /* Text on the right */
+}
+
+.text-image-paragraph.text-right .image {
+  order: 2;                     /* Image on the right */
+  display: flex;                /* Use flex to center the image */
+  justify-content: center;      /* Horizontally center the image */
+}
+
+.text-image-paragraph.text-right .text {
+  order: 1;                     /* Text on the left */
+}
+
+.image {
+  display: flex;                /* Ensures we can center the image properly */
+  justify-content: center;      /* Center image horizontally */
+  align-items: center;          /* Center image vertically */
+  flex: 1;
+}
+
+.image img {
+  max-width: 100%;              /* Ensure image scales correctly */
+  height: auto;                 /* Maintain image aspect ratio */   /* Optional: Control image height */
+}
+
+.text {
+  width: 80%;                   /* Control the width of the text */
+  margin: 0 auto;               /* Center the text block */
+  flex: 1;                      /* Allow text block to grow */
+  text-align: center;           /* Optional: center align text */
+}
+
+@media (max-width: 768px) {
+  .text-image-paragraph {
+    flex-direction: column;     /* Stack text and image vertically on small screens */
+    text-align: center;         /* Center align both text and image */
+  }
+
+  .text {
+    width: 100%;                /* Make text block take full width */
+  }
+
+  .image img {
+    width: 100%;                /* Make image take full width */
+    max-height: none;           /* Remove image height constraint on smaller screens */
+  }
+}

@@ -1,0 +1,22 @@
+name: cheeta_theme
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - cheeta_theme/base
+  - cheeta_theme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - cheeta_theme/user
+  core/drupal.dropbutton:
+    - cheeta_theme/dropbutton
+  core/drupal.dialog:
+    - cheeta_theme/dialog
+  file/drupal.file:
+    - cheeta_theme/file
+  core/drupal.progress:
+    - cheeta_theme/progress
+description: ''
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.3.10'
