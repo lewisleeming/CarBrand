@@ -1,0 +1,24 @@
+uuid: d674c571-6dc4-4ac5-8d8e-fdd11a7bba98
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.title
+  module:
+    - facets
+  theme:
+    - cheeta_subtheme
+id: cheeta_subtheme_title
+theme: cheeta_subtheme
+region: nav_additional
+weight: 0
+provider: null
+plugin: 'facet_block:title'
+settings:
+  id: 'facet_block:title'
+  label: Title
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: cheeta_subtheme_title
+visibility: {  }

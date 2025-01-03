@@ -1,0 +1,29 @@
+uuid: bbea7506-f829-4501-ba03-3da0efe84d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.cheetaindex
+    - views.view.cheeta_search
+  module:
+    - views
+    - search_api_autocomplete
+id: cheeta_search
+label: 'Cheeta Search'
+index_id: cheetaindex
+suggester_settings:
+  live_results:
+    fields: {  }
+    highlight:
+      enabled: false
+      field: ''
+    suggest_keys: false
+    view_modes: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:cheeta_search':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

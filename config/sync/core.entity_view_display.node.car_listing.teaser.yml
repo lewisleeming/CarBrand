@@ -24,3 +24,5 @@ hidden:
   field_car_type: true
   field_hero_image: true
   field_main_components: true
+  langcode: true
+  search_api_excerpt: true

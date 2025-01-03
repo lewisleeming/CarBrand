@@ -34,3 +34,5 @@ hidden:
   field_image: true
   field_location: true
   field_main_components: true
+  langcode: true
+  search_api_excerpt: true

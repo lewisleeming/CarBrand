@@ -1,0 +1,11 @@
+uuid: 0c91e2a9-d850-46fc-b421-2a2014a6cda4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.car_listing
+id: node.car_listing
+target_entity_type_id: node
+target_bundle: car_listing
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,34 @@
+uuid: 99bfe6f2-356f-4c00-91f6-d3575952a026
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.cheeta_search
+  module:
+    - node
+    - views
+  theme:
+    - cheeta_subtheme
+id: cheeta_subtheme_views_block__cheeta_search_block_1
+theme: cheeta_subtheme
+region: nav_main
+weight: 0
+provider: null
+plugin: 'views_block:cheeta_search-block_1'
+settings:
+  id: 'views_block:cheeta_search-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      car_listing: car_listing
+      dealership: dealership
+      homepage: homepage

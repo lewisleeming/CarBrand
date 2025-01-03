@@ -1,0 +1,33 @@
+uuid: 0c1ae4ca-dfe2-4bf0-8b6e-a81bc2e8b995
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.cheetaindex
+    - views.view.cheeta_search
+  module:
+    - search_api
+id: title_summary
+name: 'title summary'
+facet_source_id: 'search_api:views_block__cheeta_search__block_1'
+processor_configs:
+  hide_when_not_rendered:
+    processor_id: hide_when_not_rendered
+    weights:
+      build: '45'
+    settings: {  }
+  show_text_when_empty:
+    processor_id: show_text_when_empty
+    weights:
+      build: '10'
+    settings:
+      text:
+        value: 'No results found.'
+        format: plain_text
+facets:
+  title:
+    checked: true
+    label: Title
+    separator: ', '
+    show_count: false
+    weight: 0

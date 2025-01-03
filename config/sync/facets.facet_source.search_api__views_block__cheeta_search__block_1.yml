@@ -1,0 +1,12 @@
+uuid: 4c984655-c7ea-4194-8031-1aae3adb4cad
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__cheeta_search__block_1
+name: 'search_api:views_block__cheeta_search__block_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false
