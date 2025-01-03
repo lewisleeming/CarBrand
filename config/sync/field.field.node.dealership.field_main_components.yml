@@ -1,18 +1,18 @@
-uuid: 850ec223-597b-4dfb-8fe0-20f24459257d
+uuid: 6532b118-b066-4821-8635-3591da259213
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_main_components
-    - node.type.car_listing
+    - node.type.dealership
     - paragraphs.paragraphs_type.accordion_component
     - paragraphs.paragraphs_type.image_and_text_component
   module:
     - entity_reference_revisions
-id: node.car_listing.field_main_components
+id: node.dealership.field_main_components
 field_name: field_main_components
 entity_type: node
-bundle: car_listing
+bundle: dealership
 label: 'Main components'
 description: ''
 required: true

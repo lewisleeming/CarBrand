@@ -1,0 +1,9 @@
+uuid: bb153a65-c82b-46e2-87cc-b3dc47b7a443
+langcode: en
+status: true
+dependencies: {  }
+name: 'Car type'
+vid: car_type
+description: null
+weight: 0
+new_revision: false

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.car_listing.field_car_type
     - field.field.node.car_listing.field_hero_image
     - field.field.node.car_listing.field_main_components
     - node.type.car_listing
@@ -17,7 +18,7 @@ third_party_settings:
       label: 'Main components'
       parent_name: ''
       region: hidden
-      weight: 3
+      weight: 4
       format_type: tab
       format_settings:
         classes: ''
@@ -38,20 +39,17 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 0
     region: content
   field_main_components:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-hidden: {  }
+hidden:
+  field_car_type: true
+  links: true

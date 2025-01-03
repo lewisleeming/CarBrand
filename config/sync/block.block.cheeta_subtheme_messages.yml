@@ -1,0 +1,22 @@
+uuid: b4574ef0-1b8e-45c4-b771-833d2aa5bf24
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: _RyADT54C5E53U85HSUH-m9kId13jY_vf08pLBP2t8E
+id: cheeta_subtheme_messages
+theme: cheeta_subtheme
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,18 +1,18 @@
-uuid: 75ea06a4-4d45-4ad2-808a-af68d73047f8
+uuid: 232d5a20-e85c-4d72-a0a0-c31370f16f9d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_hero_image
+    - field.storage.node.field_image
     - media.type.media
-    - node.type.car_listing
-id: node.car_listing.field_hero_image
-field_name: field_hero_image
+    - node.type.dealership
+id: node.dealership.field_image
+field_name: field_image
 entity_type: node
-bundle: car_listing
-label: 'Hero image'
+bundle: dealership
+label: Image
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -1,0 +1,19 @@
+uuid: e4ce6678-c478-4ebf-afbb-8d88dc9a08d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slogan
+    - node.type.homepage
+id: node.homepage.field_slogan
+field_name: field_slogan
+entity_type: node
+bundle: homepage
+label: Slogan
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

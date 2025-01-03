@@ -1,0 +1,27 @@
+uuid: ed17af1b-b316-4f31-b4cf-2200936d8dc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: Bp5-Kdbr2SWXrkil48ptghXhUkuTAQwQ9BFZ-gHWF9g
+id: cheeta_subtheme_main_navigation
+theme: cheeta_subtheme
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

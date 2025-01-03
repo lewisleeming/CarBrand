@@ -1,0 +1,25 @@
+uuid: 669cc885-5c5d-4e79-88d7-8c2f78908283
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: crhmaTvKBesRJW10yxgfxoGThANs_r2SpeuIu50__n4
+id: cheeta_subtheme_branding
+theme: cheeta_subtheme
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

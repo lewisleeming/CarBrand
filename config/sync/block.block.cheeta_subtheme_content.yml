@@ -1,0 +1,22 @@
+uuid: 0fac1fce-9bd6-408c-be10-5e0fc8070d51
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: EWx3cRwMBMLcOsXsS-1b-IDdlOmkyfJXHebOdtpvb3k
+id: cheeta_subtheme_content
+theme: cheeta_subtheme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 597a089c-c4da-42e2-84d0-d537544d7178
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cheeta_subtheme
+_core:
+  default_config_hash: OrtN1-6ocv4cS_br18pYHr9FWJcnumBvLxWSTnJckWw
+id: cheeta_subtheme_help
+theme: cheeta_subtheme
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
