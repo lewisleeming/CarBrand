@@ -56,7 +56,7 @@
   }
 
   .image img {
-    width: 100%;                /* Make image take full width */
+    width: 101%;                /* Make image take full width */
     max-height: none;           /* Remove image height constraint on smaller screens */
   }
 }
